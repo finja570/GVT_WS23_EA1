@@ -1,0 +1,71 @@
+body {
+    background: #a5a5a7;
+}
+
+.Kitty {
+    width: 160px;
+    height: 200px;
+    overflow: hidden; 
+    margin: auto;
+}
+.Kitty_Sprite {
+    animation: moveSpritesheet 0.8s steps(6) infinite;
+}
+
+.Scheibe {
+    width: 255px;
+    height: 230px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.Scheibe_Sprite_Run{
+    animation: moveSpritesheet 1s steps(12) infinite;
+}
+
+h1, h2, table {
+    color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #ddd;   
+}
+
+a {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    padding: 20px;
+}
+
+  
+  a:hover {
+    color: rgb(236, 160, 198);
+  }
+  
+
+@keyframes moveSpritesheet{
+    from{
+        transform: translate3d(0px,0,0);
+    }
+    to {
+        transform: translate3d(-100%,0,0);
+    }
+}
